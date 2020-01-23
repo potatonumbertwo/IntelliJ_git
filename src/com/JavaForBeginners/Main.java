@@ -8,9 +8,9 @@ public class Main {
         int count = 0;
         int sum = 0;
 
-        for (int i = 1; i <= 100; i++) {
-            sum += i;
-            i++;
+        for (count = 1; count <= 100; count++) {
+            sum += count;
+
         }
         System.out.println(sum);
     }
