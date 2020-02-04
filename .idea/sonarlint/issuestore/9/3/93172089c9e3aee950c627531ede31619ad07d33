@@ -1,0 +1,5 @@
+
+]squid:S2259"?A "NullPointerException" could be thrown; "t" is nullable here.(ËÓ’ã8ö‡‚¹ÿ-
+[squid:S1197	"8Move the array designator from the variable to the type.(¡şÏÖøÿÿÿÿ8ö‡‚¹ÿ-
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Á²ã
+¤squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(›¸¿£üÿÿÿÿ8ö‡‚¹ÿ-
