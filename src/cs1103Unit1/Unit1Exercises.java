@@ -1,9 +1,34 @@
 package cs1103Unit1;
 
+import java.util.Scanner;
+
 public class Unit1Exercises {
     public static void main(String[] args) {
 
-System.out.println(root1(5,6,1));
+        Scanner input = new Scanner(System.in);
+        String answer;
+        while (true) {
+            try {
+                System.out.println("Please enter 3 numbers");
+                double A = input.nextDouble();
+                double B = input.nextDouble();
+                double C = input.nextDouble();
+
+                System.out.println(root(A, B, C));
+            } catch (Exception e) {
+                System.out.println("There is an error!"+e.getMessage());
+
+            }
+
+            System.out.println("If you want to keep going? Yes/No");
+            answer = input.next();
+
+            if (answer.equalsIgnoreCase("Yes")) {
+
+                continue;
+            } else break;
+        }
+
     }
 
     /**

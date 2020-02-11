@@ -1,8 +1,19 @@
 
-qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(¥Ï¿å8ƒÃ„·ÿ-
-psquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Ï¿å8ƒÃ„·ÿ-
-ª%squid:RedundantThrowsDeclarationCheck"mRemove the declaration of thrown exception 'java.lang.IllegalArgumentException' which is a runtime exception.(ó’Úıÿÿÿÿ8ƒÃ„·ÿ-
-psquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Ï¿å8ƒÃ„·ÿ-
-Ÿsquid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Çµí‘8×•„·ÿ-
-psquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Ï¿å8ƒÃ„·ÿ-
+psquid:S00117("QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Ï¿å8Ñ˜®±.
+psquid:S001179"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãü¤˜8Ñ˜®±.
+qsquid:ModifiersOrderCheck("EReorder the modifiers to comply with the Java Language Specification.(¥Ï¿å8Ñ˜®±.
+psquid:S001179"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãü¤˜8Ñ˜®±.
+qsquid:ModifiersOrderCheck9"EReorder the modifiers to comply with the Java Language Specification.(Ãü¤˜8Ñ˜®±.
+psquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àÊˆì8»ë™¶.
+psquid:S001179"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãü¤˜8Ñ˜®±.
+psquid:S00117("QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Ï¿å8Ñ˜®±.
+{
+squid:S135
+"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8àŠÂ.
+ª%squid:RedundantThrowsDeclarationCheck)"mRemove the declaration of thrown exception 'java.lang.IllegalArgumentException' which is a runtime exception.(ó’Úıÿÿÿÿ8Ñ˜®±.
+9squid:S3626"Remove this redundant jump.(ÉŠ©ƒ8àŠÂ.
+psquid:S00117("QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Ï¿å8Ñ˜®±.
+usquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å¡Ï¿ıÿÿÿÿ8»ë™¶.
+usquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºòŸ±ıÿÿÿÿ8»ë™¶.
+Esquid:S4274:"(Replace this assert with a proper check.(Õ¯‰%8Ñ˜®±.
 rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Á²ã

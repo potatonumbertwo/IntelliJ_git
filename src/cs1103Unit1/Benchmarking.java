@@ -3,24 +3,14 @@ package cs1103Unit1;
 import java.util.*;
 
 public class Benchmarking {
+    //given by a constant array size
+    static final int arrayLength = 500;
 
-    static void insertionSort(int[] A) {
-        // Sort the array A into increasing order.
-        int itemsSorted; // Number of items that have been sorted so far.
-        for (itemsSorted = 1; itemsSorted < A.length; itemsSorted++) {
-            // Assume that items A[0], A[1], ... A[itemsSorted-1]
-            // have already been sorted.  Insert A[itemsSorted]
-            // into the sorted part of the list.
-            int temp = A[itemsSorted];  // The item to be inserted.
-            int loc = itemsSorted - 1;  // Start at end of list.
-            while (loc >= 0 && A[loc] > temp) {
-                A[loc + 1] = A[loc]; // Bump item from A[loc] up to loc+1.
-                loc = loc - 1;       // Go on to next location.
-            }
-            A[loc + 1] = temp; // Put temp in last vacated space.
-        }
-    }
-
+    /**
+     * selection sort method copied from textbook
+     *
+     * @param A
+     */
     static void selectionSort(int[] A) {
         // Sort A into increasing order, using selection sort
         for (int lastPlace = A.length - 1; lastPlace > 0; lastPlace--) {
@@ -45,34 +35,60 @@ public class Benchmarking {
 
     public static void main(String[] args) {
 
-        int[] array1 = new int[10];
-        int[] array2 = new int[10];
+        int[] array1 = new int[arrayLength];
+        int[] array2 = new int[arrayLength];
 
-        List<Integer> list1 = new ArrayList<Integer>();
-
+        // fill the array with random integers
         for (int i = 0; i < array1.length; i++) {
             int x = (int) (Integer.MAX_VALUE * Math.random());
-            list1.add(x);
-
-
+            array1[i] = x; //fill the random integer for the first array
         }
-/**
- * compute the runtime of selection sort
- */
+        array2 = array1.clone(); // create an identical contents for the second array
 
-        long selectStartTime = System.currentTimeMillis();
-//        selectionSort(list1);
-        long selectRunTime = System.currentTimeMillis() - selectStartTime;
-        System.out.println(selectRunTime / 1000.0);
+        // call the selection sort run time method
+        double selectionSortRunTime = selectionSortRunTime(array1);
+        System.out.println("When the array size at " +
+                arrayLength +
+                " the selection sort run time is " +
+                selectionSortRunTime + " milliseconds");
 
-/**
- compute the runtime of build-in method array.sort
- */
-        long arrayStartTime = System.currentTimeMillis();
-        Arrays.sort(new List[]{list1});
-        long arrayRunTime = System.currentTimeMillis() - arrayStartTime;
-
-        System.out.println(arrayRunTime / 1000.0);
+        // call the selection sort run time method and show the outcome
+        double arraysRunTime = arraysRunTime(array2);
+        System.out.print("When the array size at ");
+        System.out.print(arrayLength);
+        System.out.print(" quick sort run time is ");
+        System.out.print(arraysRunTime + " milliseconds");
 
     }
+
+    /**
+     * compute the runtime of selection sort
+     *
+     * @param array
+     * @return
+     */
+    public static double selectionSortRunTime(int[] array) {
+        long startTime = System.currentTimeMillis();
+        selectionSort(array);
+        long endTime = System.currentTimeMillis();
+        double runTime = endTime - startTime;
+        return runTime;
+    }
+
+    /**
+     * compute the runtime of build-in quick sort
+     *
+     * @param inputArray
+     * @return
+     */
+    public static double arraysRunTime(int[] inputArray) {
+        double runTimeOfArrays;
+        long arrayStartTime = System.currentTimeMillis();
+        Arrays.sort(inputArray);
+        long arraysEndTime = System.currentTimeMillis();
+        runTimeOfArrays = arraysEndTime - arrayStartTime;
+        return runTimeOfArrays;
+
+    }
+
 }
