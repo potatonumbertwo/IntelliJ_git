@@ -1,4 +1,4 @@
-package cs1103Unit1;
+package Cs1103Unit1;
 
 public class SelfQuiz {
     class Student {

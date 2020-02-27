@@ -1,0 +1,6 @@
+
+"squid:ClassVariableVisibilityCheck"TMake newState a static final constant or non-public and provide accessors if needed.(şÉœùÿÿÿÿ8–¿§Î„.
+Œ"squid:ClassVariableVisibilityCheck"XMake currentState a static final constant or non-public and provide accessors if needed.(µ÷b8–¿§Î„.
+ˆ"squid:ClassVariableVisibilityCheck"TMake moveLeft a static final constant or non-public and provide accessors if needed.(»µà,8–¿§Î„.
+"squid:ClassVariableVisibilityCheck"VMake newContent a static final constant or non-public and provide accessors if needed.(Å¢÷şÿÿÿÿ8–¿§Î„.
+"squid:ClassVariableVisibilityCheck"ZMake currentContent a static final constant or non-public and provide accessors if needed.(ÿĞ“Ä8–¿§Î„.

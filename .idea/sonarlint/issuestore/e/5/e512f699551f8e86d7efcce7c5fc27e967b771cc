@@ -1,0 +1,8 @@
+
+zsquid:S00116"VRename this field "common_noun" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û®ñ¹ıÿÿÿÿ8‡‘’ƒ.
+~squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ï€Ï ÿÿÿÿÿ8¿™ùÖ‚.
+~squid:S00116"ZRename this field "transitive_verb" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü¦±´üÿÿÿÿ8¯ø‘’ƒ.
+Asquid:S00108,")Either remove or fill this block of code.(ä ¹€
+usquid:S00116"VRename this field "proper_noun" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òÅø‰8‡‘’ƒ.
+{squid:S00116"\Rename this field "intransitive_verb" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Áä¥¶8¯ø‘’ƒ.
+]squid:S2142,"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€

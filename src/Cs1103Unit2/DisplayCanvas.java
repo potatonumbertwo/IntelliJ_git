@@ -1,4 +1,4 @@
-package cs1103Unit2;
+package Cs1103Unit2;
 
 
 import java.awt.Color;

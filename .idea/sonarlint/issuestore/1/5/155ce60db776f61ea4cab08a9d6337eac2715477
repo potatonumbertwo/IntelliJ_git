@@ -1,0 +1,6 @@
+
+Hsquid:S001086")Either remove or fill this block of code.(ä ¹€8×òŸùƒ.
+Gsquid:S2140#")Use "java.util.Random.nextInt()" instead.(Ò¶ú8×òŸùƒ.
+Hsquid:S2140‰")Use "java.util.Random.nextInt()" instead.(ú·8×òŸùƒ.
+dsquid:S21426"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8×òŸùƒ.
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(£ÉÎğûÿÿÿÿ
