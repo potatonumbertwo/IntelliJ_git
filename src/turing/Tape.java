@@ -111,7 +111,7 @@ public class Tape {
         // current char could be the middle
         char currentChar = currentCell.getContent();
 
-        tapeString = preString + " " + nextString;
+        tapeString = preString + " "+nextString;
         System.out.println(currentChar);
 
         return tapeString;
@@ -121,8 +121,3 @@ public class Tape {
         this.currentCell = currentCell;
     }
 }
-
-
-
-
-

@@ -38,39 +38,60 @@ import java.util.TreeSet;
  * outputting a set.)
  */
 public class SetCalculator {
+
+
     public static void main(String[] args) {
 
-
-        TreeSet<Integer> set1 = new TreeSet<Integer>();
-        TreeSet<Integer> set2 = new TreeSet<Integer>();
-        set1.add(1);
-        set1.add(2);
-        set1.add(3);
-        set1.add(4);
-        System.out.println(set1);
-
-        set2.add(3);
-        set2.add(4);
-        set2.add(5);
-        System.out.println(set2);
-
-
         Scanner input = new Scanner(System.in);
+
+        TreeSet<Integer> setA = new TreeSet<>();
+        TreeSet<Integer> setB = new TreeSet<>();
+
+        System.out.println("Input set numbers: ");
+
+        int int1 = 0;
+        int int2 = 0;
+        int int3 = 0;
+        int int4 = 0;
+        int int5 = 0;
+
+        if (input.hasNextInt()) int1 = input.nextInt();
+        if (input.hasNextInt()) int2 = input.nextInt();
+        if (input.hasNextInt()) int3 = input.nextInt();
+        if (input.hasNextInt()) int4 = input.nextInt();
+        if (input.hasNextInt()) int5 = input.nextInt();
+
+        setA.add(int1);
+        setA.add(int2);
+        setA.add(int3);
+        setA.add(int4);
+        System.out.println(setA);
+
+        setB.add(int3);
+        setB.add(int4);
+        setB.add(int5);
+        System.out.println(setB);
+
+
         System.out.println("Input an operator: ");
-        String operator = input.next();
+        String operator = "";
+        if (input.hasNext()) operator = input.next();
 
         if (operator.equals("+")) {
-            set1.addAll(set2);
-            System.out.println(set1);
+            setA.addAll(setB);
+            System.out.println("The union of two sets A and B is: " + setA);
+
         }
         if (operator.equals("-")) {
-            set1.removeAll(set2);
-            System.out.println(set1);
+            setA.removeAll(setB);
+            System.out.println("The difference of A and B is" + setA);
         }
         if (operator.equals("*")) {
-            set1.retainAll(set2);
-            System.out.println(set1);
+            setA.retainAll(setB);
+            System.out.println("The intersection of A and B is" + setA);
         }
 
     }
+
+
 }
